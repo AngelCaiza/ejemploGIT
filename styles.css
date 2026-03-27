@@ -38,108 +38,111 @@ main {
   flex: 1;
   text-align: center;
 }
-/* Contenedor del login */
-form {
-  background: white;
-  max-width: 350px;
-  margin: 50px auto;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
+/* =========================================
+   ESTILOS DE LOGIN (Diseño Moderno)
+========================================= */
 
-/* Inputs */
-input {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-/* Botón */
-button {
-  width: 100%;
-  padding: 10px;
-  background: #007BFF;
-  border: none;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 15px;
-}
-
-/* Hover botón */
-button:hover {
-  background: #0056b3;
-}
-
-/* Títulos */
-h1 {
-  text-align: center;
-}
-
-/* Espaciado general */
-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-/* Centrar todo en pantalla */
-body {
+.login-page {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #4facfe, #00f2fe);
-  height: 100vh;
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
-/* Caja del formulario */
-form {
-  background: white;
-  padding: 30px;
-  border-radius: 12px;
-  width: 320px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-}
-
-/* Labels */
-label {
-  font-weight: bold;
-  font-size: 14px;
-}
-
-/* Inputs */
-input {
+.login-container {
   width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  outline: none;
+  max-width: 400px;
+  padding: 20px;
 }
 
-/* Efecto al hacer focus */
-input:focus {
-  border-color: #4facfe;
-}
-
-/* Botón */
-button {
-  width: 100%;
-  padding: 12px;
-  background: #4facfe;
-  border: none;
+.login-form {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   color: white;
-  font-size: 16px;
-  border-radius: 6px;
-  cursor: pointer;
+  text-align: center;
+  box-sizing: border-box;
 }
 
-/* Hover botón */
-button:hover {
-  background: #00c6ff;
+.login-form h2 {
+  margin: 0 0 10px;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
+
+.login-form p {
+  margin: 0 0 30px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.input-group {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: rgba(255, 255, 255, 0.9);
+  letter-spacing: 0.5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.input-group input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.input-group input:focus {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.login-btn {
+  width: 100%;
+  padding: 14px;
+  background: white;
+  color: #764ba2;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.login-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  background: #f8f9fa;
+}
+
+.login-btn:active {
+  transform: translateY(1px);
+}
